@@ -1,0 +1,48 @@
+package ForPractice_TestScript;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class FileUpload {
+
+	public static void main(String[] args) {
+		
+		try {
+		
+		WebDriverManager.chromedriver().setup();
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://cgi-lib.berkeley.edu/ex/fup.html");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("//input[@name='upfile']")).sendKeys("D:/Read&WriteExcel/EmployeeDetails.xlsx");
+		
+		WebElement remark = driver.findElement(By.xpath("//input[@name='note']"));
+		WebElement pressBtn = driver.findElement(By.xpath("//input[@value='Press']"));
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='File is uploaded';", remark);
+		
+		Actions act = new Actions(driver);
+		act.click(pressBtn).perform();
+		
+		
+			
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+
+	}
+
+}
