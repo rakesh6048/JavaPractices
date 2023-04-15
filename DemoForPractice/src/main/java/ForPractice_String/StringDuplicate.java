@@ -4,23 +4,47 @@ public class StringDuplicate {
 
 	public static void main(String[] args) {
 
-		String s1="Big black bug bit a big black dog on his big black nose";
-		int count;
+		String s1="My name is rakesh Kumar Sngh My name is rakesh Kumar Sngh My name is rakesh Kumar Sngh My name is rakesh Kumar Sngh";
 		
-		String s2[] = s1.split(" ");
+		String s2[] =s1.split(" ");
+		
+		//Print the string in how many times came
 		
 		for(int i=0;i<s2.length;i++) {
-			count = 1;
-		   for(int j=i+1;j<s2.length;j++) {
-			   if(s2[i].equalsIgnoreCase(s2[j])) {
-				   count++;
-				   s2[j] ="0";
-			   }
-		   }
-		   if(count>1 && s2[i] != "0") {
-			   System.out.println(s2[i]);
-		   }
+			int countNum=1;
+			for(int j=i+1;j<s2.length;j++) {
+
+				if(s2[i].equalsIgnoreCase(s2[j])) {
+
+					s2[j] ="0";
+					countNum++;
+				}
+
+			}
+
+			if(s2[i] !="0") {
+				System.out.println(s2[i]+"="+countNum);
+			}
 		}
+		
+		String s3="asdfasdfgag11hdjbfm5590@#@";
+		
+		char ch[] = s3.toCharArray();
+		
+		for(int i=0;i<ch.length;i++) {
+			int countNum=1;
+		   for(int j=i+1;j<ch.length;j++) {
+			  if(ch[i] ==ch[j]) {
+				  ch[j]='0';
+				  countNum++;
+			  }
+		   }
+		   if(ch[i] !='0') {
+			   System.out.println(ch[i]+"="+countNum);
+		   }
+		   
+		}
+		
 
 	}
 

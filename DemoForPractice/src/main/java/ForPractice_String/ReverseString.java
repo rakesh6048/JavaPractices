@@ -4,7 +4,7 @@ public class ReverseString {
 
 	public static void main(String[] args) {
 	
-		String s1 ="Welcome to java";
+		/*String s1 ="Welcome to java";
 		String s2[]=s1.split(" ");
 		System.out.println(s2.length);
 		String RevString ="";
@@ -47,6 +47,69 @@ public class ReverseString {
 			RevStr =RevStr+s2[j]+" ";
 		}
 		System.out.println(RevStr);
+	}*/
+	
+	
+	
+		String s1 ="Welcome to java";
+		String strrev = "";
+		String s2[]=s1.split(" ");
+		
+		for(int i=0;i<s1.length();i++) {
+			System.out.print(s1.charAt(i));
+		}
+	     System.out.println("\n"+"Print String after reverse");
+	      
+	     for(int i=s1.length()-1;i>=0;i--) {
+	    	 strrev = strrev+s1.charAt(i);
+	     }
+	     System.out.println(strrev);
+	     
+	    System.out.println("\n"+"Reverse Word String");
+	    
+	    for(int j=0;j<s2.length;j++) {
+	    	String revWord="";
+	    	String s3=s2[j];
+	    	for(int k=s3.length()-1;k>=0;k--) {
+	    		revWord = revWord+s3.charAt(k);
+	    	}
+	    	
+	    	System.out.print(revWord+" ");
+	    	
+	    }
+	     
+	     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	}
-
 }

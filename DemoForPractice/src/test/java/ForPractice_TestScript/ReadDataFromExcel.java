@@ -20,8 +20,8 @@ public class ReadDataFromExcel {
 		try {
 		FileInputStream fi = new FileInputStream("D:/Read&WriteExcel/EmployeeDetails.xlsx");
 		Workbook wb = WorkbookFactory.create(fi);
-		Sheet s = wb.getSheet("Sheet1");
-		r = s.getRow(0);
+		Sheet s = wb.getSheet("Sheet2");
+		r = s.getRow(1);
 		
 		int totalNumberOfRow = s.getLastRowNum();
 		int totalNumberOfColumn = r.getLastCellNum();
@@ -35,8 +35,9 @@ public class ReadDataFromExcel {
 			   r = s.getRow(i);
 			   c = r.getCell(j);
 			   String str = c.getStringCellValue();
-			   System.out.println(str);
+			   System.out.print(str+" ");
 		   }
+		   System.out.println("\n");
 		}
 		
 		

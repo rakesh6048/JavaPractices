@@ -15,13 +15,14 @@ public class NumberOfDuplicateCharInString {
 		for(Character value : ch) {
 			if(Character.isAlphabetic(value) || Character.isDigit(value)) {
 				if(hmp.containsKey(value)) {
-					
 					hmp.put(value, hmp.get(value)+1);
 				}else {
 					hmp.put(value, 1);
 				}
 			}
 		}
+	  //for(String)
+		
 	   System.out.println(hmp);
 		
 	}
