@@ -3,8 +3,6 @@ package ForPractice_Collection_Program;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.apache.poi.util.SystemOutLogger;
-
 public class ArrayList {
 
 	public static void main(String[] args) {
@@ -26,14 +24,6 @@ public class ArrayList {
      Set<String> s= new HashSet<String>(al);
      
      System.out.println(s);
-     
-    
-     
-     
-     
-    
-     
-
 	}
 
 }
