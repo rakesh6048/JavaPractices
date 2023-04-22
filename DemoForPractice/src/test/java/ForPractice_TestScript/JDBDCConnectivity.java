@@ -8,6 +8,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import javax.imageio.stream.FileCacheImageInputStream;
+
 public class JDBDCConnectivity extends Properties {
 	
 	public static java.util.Properties empDetails=null;
@@ -18,33 +20,35 @@ public class JDBDCConnectivity extends Properties {
 	public static void main(String[] args) {
 
 		try {
-			empDetails = new java.util.Properties();
+			empDetails =new java.util.Properties();
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//EmployeeDetails.properties");
+			empDetails.load(fis);
 			
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "//EmployeeDetails.properties");
-			empDetails.load(ip);
+			//Load Driver Class
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			System.out.println(empDetails.getProperty("name"));
+			//Create a connection
+			Connection conection = DriverManager.getConnection(url, userName, password);
 			
-			//Register the Driver Class
+			//create statement
+			Statement st = conection.createStatement();
 			
-			//Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-			  Class.forName("com.mysql.cj.jdbc.Driver");
-			  
-			// Create a Connections
-			  
-			 Connection connection = DriverManager.getConnection(url, userName, password);
-			 
-			 //Create a statement
-			 
-			 Statement st = connection.createStatement();
-			 
-			 //Execute a query
-			 
-			 ResultSet rs = st.executeQuery("select * from emp");
-			 
-			 while(rs.next()) {
-				 
-				 if(empDetails.getProperty("name").equals(rs.getString(2))) {
+			//Execute a query
+			ResultSet rs = st.executeQuery("select * from emp");
+			
+			while(rs.next()) {
+				
+				/*if(empDetails.getProperty("name").equals(rs.getString(2))) {
+					System.out.println("Name : "+rs.getString(2));
+				}if(empDetails.getProperty("address").equals(rs.getString(3))) {
+					System.out.println("Address : "+rs.getString(3));
+				}if(empDetails.getProperty("salary").equals(rs.getString(4))) {
+					System.out.println("Salary : "+rs.getString(4));
+				}if(empDetails.getProperty("doj").equals(rs.getString(5))) {
+					System.out.println("DOJ : "+rs.getString(5));
+				}*/
+				
+				if(empDetails.getProperty("name").equals(rs.getString(2))) {
 					 System.out.println(rs.getString(2));
 				 }
 				 if(empDetails.getProperty("address").equals(rs.getString(3))) {
@@ -55,11 +59,9 @@ public class JDBDCConnectivity extends Properties {
 				 }if(empDetails.getProperty("doj").equals(rs.getString(5))) {
 					 System.out.println(rs.getString(5));
 				 } 
-			 }
-			 //Close the connection
-			 
-			 connection.close();
-			
+			}
+			//close connection
+			conection.close();
     	   
        }catch(Exception e) {
     	   System.out.println(e);

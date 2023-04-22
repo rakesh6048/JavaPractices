@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.DataFormatter;
 
 public class ReadDataHSS {
 
@@ -13,22 +14,20 @@ public class ReadDataHSS {
 			
 			FileInputStream fin = new FileInputStream("D:/Read&WriteExcel/Book2.xls");
 			
-			HSSFWorkbook  wb = new HSSFWorkbook(fin);
+			HSSFWorkbook wb =new HSSFWorkbook(fin);
+			HSSFSheet sheet = wb.getSheetAt(0);
 			
-			HSSFSheet s = wb.getSheet("Sheet");
+			int numberOfRowCount =sheet.getLastRowNum()-sheet.getFirstRowNum();
 			
-			int rowCount = s.getLastRowNum()-s.getFirstRowNum();
-			
-			for(int i=0;i<rowCount;i++) {
+			for(int i=0;i<numberOfRowCount;i++) {
 				
-				int columnCount = s.getRow(i).getLastCellNum();
+				int numberofColumnCount = sheet.getRow(i).getLastCellNum();
 				
-				for(int j=0;j<columnCount;j++) {
-					System.out.print(s.getRow(i).getCell(j).getStringCellValue());
+				for(int j=0;j<numberofColumnCount;j++) {
+					System.out.print(new DataFormatter().formatCellValue(sheet.getRow(i).getCell(j))+" ");
 				}
 				
-				System.out.println("\n");
-				
+				System.out.println();
 			}
 			
 			

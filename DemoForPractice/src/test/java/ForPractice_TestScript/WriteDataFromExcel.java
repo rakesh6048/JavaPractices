@@ -19,11 +19,11 @@ public class WriteDataFromExcel {
 		try {
 		FileInputStream fi = new FileInputStream("D:/Read&WriteExcel/EmployeeDetails.xlsx");
 		Workbook wb = WorkbookFactory.create(fi);
-		Sheet s = wb.createSheet("FirstSheet");
+		Sheet s =wb.createSheet("NewSheet");
 		
 		r = s.createRow(1);
 		c = r.createCell(1);
-		c.setCellValue("Location");
+		c.setCellValue("location");
 		
 		FileOutputStream out = new FileOutputStream("D:/Read&WriteExcel/EmployeeDetails2.xlsx");
 		wb.write(out);

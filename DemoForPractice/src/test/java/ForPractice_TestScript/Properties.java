@@ -12,19 +12,19 @@ public class Properties {
 	public static void main(String args[]) throws IOException {
 		
 		prop = new java.util.Properties();
+	try {
 		
-		FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "//EmployeeDetails.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//EmployeeDetails.properties");
 		
-		try {
-		prop.load(ip);
+		prop.load(fis);
 		
-		String name = prop.getProperty("name");
+		System.out.println(prop.getProperty("name"));
+		System.out.println(prop.getProperty("address"));
 		
-		System.out.println("Name : "+name);
-		System.out.println("Address : "+prop.getProperty("address"));
-		}catch(Exception e) {
-			System.out.println(e);
-		}		
 		
+	}catch(Exception e) {
+		System.out.println(e);
+	}
+	
 	}
 }

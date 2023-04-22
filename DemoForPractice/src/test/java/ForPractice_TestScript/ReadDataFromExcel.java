@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 
 import org.apache.poi.ss.formula.WorkbookDependentFormula;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -14,39 +15,32 @@ public class ReadDataFromExcel {
 	public static void main(String[] args) {
 		
 		
-		Row r = null;
+		Row r=null;
 		Cell c;
 		
 		try {
-		FileInputStream fi = new FileInputStream("D:/Read&WriteExcel/EmployeeDetails.xlsx");
-		Workbook wb = WorkbookFactory.create(fi);
-		Sheet s = wb.getSheet("Sheet2");
-		r = s.getRow(1);
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//ExcelTestData//TestData.xlsx");
+		Workbook wb = WorkbookFactory.create(fis);
+		Sheet s = wb.getSheetAt(0);
+		r=s.getRow(1);
 		
 		int totalNumberOfRow = s.getLastRowNum();
 		int totalNumberOfColumn = r.getLastCellNum();
 		
-		System.out.println("Total Number Of Row : "+totalNumberOfRow);
-		System.out.println("Total Number of Column : "+totalNumberOfColumn);
+		System.out.println("Total Row : "+totalNumberOfRow);
+		System.out.println("Total Column : "+totalNumberOfColumn);
 		
 		for(int i=0;i<totalNumberOfRow;i++) {
-		   for(int j=0;j<totalNumberOfColumn;j++) {
-			   
-			   r = s.getRow(i);
-			   c = r.getCell(j);
-			   String str = c.getStringCellValue();
-			   System.out.print(str+" ");
-		   }
-		   System.out.println("\n");
+		  for(int j=0;j<totalNumberOfColumn;j++) {
+			  System.out.print(new DataFormatter().formatCellValue(s.getRow(i).getCell(j))+" ");
+		  }
+           System.out.println();
 		}
-		
-		
+			
 		}catch(Exception e) {
-			
 			System.out.println(e);
-			
 		}
-
+		
 	}
 
 }

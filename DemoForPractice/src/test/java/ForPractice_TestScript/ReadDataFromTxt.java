@@ -9,16 +9,15 @@ public class ReadDataFromTxt {
 		
 		try {
 			
-		Scanner in = new Scanner(new FileReader("D:/Read&WriteExcel/demo.txt"));
-		StringBuilder sb = new StringBuilder();
-		
-		while(in.hasNext()) {
+			Scanner in =new Scanner(new FileReader("D:/Read&WriteExcel/demo.txt"));
+			StringBuilder sb = new StringBuilder();
 			
-			sb.append(in.next()+" ");
-		}
-		
-		String outString = sb.toString();
-		System.out.println(outString);
+			while(in.hasNext()) {
+				sb.append(in.next()+" ");
+			}
+			String outString =sb.toString();
+			System.out.println(outString);
+			
 		
 		}catch(Exception e) {
 		 

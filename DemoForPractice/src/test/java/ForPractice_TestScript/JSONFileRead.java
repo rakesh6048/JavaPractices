@@ -11,24 +11,23 @@ import org.json.simple.parser.ParseException;
 public class JSONFileRead {
 
 	public static void main(String[] args)throws FileNotFoundException, IOException, ParseException {
- 
-		JSONParser jsonpars = new JSONParser();
 		
-		try {
-			
-		FileReader reader = new FileReader("D:/Read&WriteExcel/JsonEmployeeDetails.json");
-			
-		Object obj = jsonpars.parse(reader);
-		
-	    JSONArray empList = (JSONArray) obj;
-	    
-	    System.out.println(empList);
-			
-			
-		}catch(Exception e) { 
-			System.out.println(e);
-		}
-         
+       JSONParser parser = new JSONParser();
+       
+       try {
+    	   
+       FileReader fr = new FileReader("D:/Read&WriteExcel/JsonEmployeeDetails.json");
+       
+       Object obj = parser.parse(fr);
+       
+       JSONArray empList = (JSONArray) obj;
+       
+       System.out.println(empList);
+    	   
+    	   
+       }catch(Exception e) {
+    	   System.out.println(e);
+       }
 
 	}
 
