@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class DataDrivenFramework {
 	
-	
+	//https://opensource-demo.orangehrmlive.com/
 	
 	@Test(dataProvider="DSM")
 	public void  verifyLoginDetails(String login, String passwd) {
@@ -21,5 +21,4 @@ public class DataDrivenFramework {
 		
 		return data;
 	}
-
 }

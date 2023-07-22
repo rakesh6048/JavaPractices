@@ -32,7 +32,7 @@ public class JSONFileWrite {
 	
 	empDetails3.put("FirstName", "Mohan");
 	empDetails3.put("LastName", "Panday");
-	empDetails3.put("CompanyName", "Virtus");
+	empDetails3.put("CompanyName", "Virtusa");
 	
 	JSONObject empObject3 = new JSONObject();
 	empObject3.put("EmpDetails3", empDetails3);

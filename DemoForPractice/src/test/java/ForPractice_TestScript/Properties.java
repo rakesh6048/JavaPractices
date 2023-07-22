@@ -2,25 +2,23 @@ package ForPractice_TestScript;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.*;
+
 
 public class Properties {
 	
-	public static java.util.Properties prop =null;
+	public static java.util.Properties empDetails=null;
 	
-	public static void main(String args[]) throws IOException {
+	public static void empInfo()throws FileNotFoundException  {
 		
-		prop = new java.util.Properties();
+		empDetails = new java.util.Properties();	
 	try {
 		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//EmployeeDetails.properties");
 		
-		prop.load(fis);
+		empDetails.load(fis);
 		
-		System.out.println(prop.getProperty("name"));
-		System.out.println(prop.getProperty("address"));
-		
+		//System.out.println("Name : "+empDetails.getProperty("name"));
+		//System.out.println("Address : "+empDetails.getProperty("address"));
 		
 	}catch(Exception e) {
 		System.out.println(e);

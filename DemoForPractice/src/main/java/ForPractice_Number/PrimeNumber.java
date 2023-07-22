@@ -25,10 +25,11 @@ public class PrimeNumber {
     	  }
     	  
     	  System.out.println("Prime Number between 1 To "+n+" : "+primeNumber);
+    	  //int primeNo=Integer.valueOf(primeNumber);
+    	  //System.out.println("Prime Number between 1 To "+n+" : "+primeNo);
+    	  
       }catch(Exception e) {
     	  System.out.println(e);
-      }
-
-	}
-
+     }
+  }
 }

@@ -30,14 +30,21 @@ public class FileUpload {
 	   
 	   driver.findElement(By.xpath("//input[@name='upfile']")).sendKeys("D:/Read&WriteExcel/EmployeeDetails.xlsx");
 	   
+	   //WebElement upload = driver.findElement(By.xpath("//input[@name='upfile']"));
+	   
 	   WebElement remark = driver.findElement(By.xpath("//input[@name='note']"));
 	   WebElement pressBtn = driver.findElement(By.xpath("//input[@value='Press']"));
 	   
 	   JavascriptExecutor js = (JavascriptExecutor)driver;
-	   js.executeScript("arguments[0].value='File is uploaded successfully'", remark);
+	   js.executeScript("arguments[0].value='File is uploaded successfully'", remark);	   
+	   //js.executeScript("documents[0].value='File is uploaded successfully'", remark);
+	     //js.executeScript("document.getElementByName('note').value='File is uploaded successfully'");
+	   js.executeScript("arguments[0].click();", pressBtn);
+	   //js.executeScript("document[0].click();", pressBtn);
+	   
 	   
 	   Actions act = new Actions(driver);
-	   act.click(pressBtn).perform();
+	   //act.click(pressBtn).perform();
 		
 			
 		}catch(Exception e) {

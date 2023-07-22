@@ -1,6 +1,6 @@
 package ForPractice_TestScript;
 
-import static ForPractice_TestScript.Properties.prop;
+import static ForPractice_TestScript.Properties.empDetails;
 
 import java.io.FileInputStream;
 import java.sql.Connection;
@@ -12,7 +12,7 @@ import javax.imageio.stream.FileCacheImageInputStream;
 
 public class JDBDCConnectivity extends Properties {
 	
-	public static java.util.Properties empDetails=null;
+	
 	static String url ="Jdbc:mysql://localhost:3306/demo_sq_practice";
 	static String userName = "admin";
 	static String password = "admin";
