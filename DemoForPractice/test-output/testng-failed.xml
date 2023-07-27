@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Latest_Practice_TestScripts.WriteDataFromExcel">
+      <class name="Latest_Practice_TestScripts.TestingTestNG">
         <methods>
-          <include name="craeteSheetInExcelAndWrite"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- Latest_Practice_TestScripts.WriteDataFromExcel -->
+      </class> <!-- Latest_Practice_TestScripts.TestingTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

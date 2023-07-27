@@ -6,7 +6,7 @@ import java.util.Set;
 
 import com.mysql.cj.conf.StringProperty;
 
-import ForPractice_String.StringPlaimdrom;
+import ForPractice_String.FirstPractice_String_Program.StringPlaimdrom;
 
 public class SetPrintUniqChar {
 

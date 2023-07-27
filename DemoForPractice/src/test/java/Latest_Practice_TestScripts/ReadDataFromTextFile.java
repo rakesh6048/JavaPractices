@@ -11,17 +11,19 @@ public class ReadDataFromTextFile {
 	@Test
 	public void readFromTextFile() throws FileNotFoundException {
 		
+		//D:/Read&WriteExcel/demo.txt
+		
 		FileReader fr = new FileReader("D:/Read&WriteExcel/demo.txt");
 		
-		Scanner input = new Scanner(fr);
+		Scanner sc = new Scanner(fr);
 		StringBuilder sb = new StringBuilder();
 		
-		while(input.hasNext()) {
-			//System.out.println(sb.append(input.next()).toString());
-			sb.append(input.next()+" ");
+		while(sc.hasNext()) {
+		 sb.append(sc.next()+" ");
 		}
-		String output = sb.toString();
-		System.out.println(output);
+		
+		System.out.println(sb.toString());
 	}
 
 }
+ 

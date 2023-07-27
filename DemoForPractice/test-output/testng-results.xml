@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="869" started-at="2023-07-22T19:55:18Z" finished-at="2023-07-22T19:55:19Z">
+  <suite name="Default suite" duration-ms="31" started-at="2023-07-27T18:16:57Z" finished-at="2023-07-27T18:16:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="869" started-at="2023-07-22T19:55:18Z" finished-at="2023-07-22T19:55:19Z">
-      <class name="Latest_Practice_TestScripts.WriteDataFromExcel">
-        <test-method status="PASS" signature="craeteSheetInExcelAndWrite()[pri:1, instance:Latest_Practice_TestScripts.WriteDataFromExcel@39c0f4a]" name="craeteSheetInExcelAndWrite" duration-ms="852" started-at="2023-07-23T01:25:18Z" finished-at="2023-07-23T01:25:19Z">
+    <test name="Default test" duration-ms="31" started-at="2023-07-27T18:16:57Z" finished-at="2023-07-27T18:16:57Z">
+      <class name="ForPractice_Array._Second_Practice_Array_Program.MultiDimensionalArray">
+        <test-method status="PASS" signature="multipicationInArray()[pri:0, instance:ForPractice_Array._Second_Practice_Array_Program.MultiDimensionalArray@6a4f787b]" name="multipicationInArray" duration-ms="16" started-at="2023-07-27T23:46:57Z" finished-at="2023-07-27T23:46:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- craeteSheetInExcelAndWrite -->
-      </class> <!-- Latest_Practice_TestScripts.WriteDataFromExcel -->
+        </test-method> <!-- multipicationInArray -->
+      </class> <!-- ForPractice_Array._Second_Practice_Array_Program.MultiDimensionalArray -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

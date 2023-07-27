@@ -11,16 +11,15 @@ public class ReadDataFromXMLFile {
 	@Test
 	public void readFromXMLFile() throws FileNotFoundException {
 		
-		FileReader fr = new FileReader("D:/Read&WriteExcel/testng.xml");
+		FileReader fr = new FileReader(System.getProperty("user.dir") + "//testng.xml");
+		
 		Scanner sc = new Scanner(fr);
 		StringBuilder sb = new StringBuilder();
 		
 		while(sc.hasNext()) {
 			sb.append(sc.next()+" ");
 		}
-		String output=sb.toString();
-		System.out.println(output);
-		sc.close();
+		System.out.println(sb.toString());
 	}
 
 }
