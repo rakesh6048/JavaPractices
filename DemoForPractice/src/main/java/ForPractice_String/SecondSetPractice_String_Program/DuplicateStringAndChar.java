@@ -2,7 +2,7 @@ package ForPractice_String.SecondSetPractice_String_Program;
 
 import org.testng.annotations.Test;
 
-import ForPractice_Collection_Program.HashMap;
+import ForPractice_Collection_Program.First_Collection_Program.HashMap;
 
 public class DuplicateStringAndChar {
 	

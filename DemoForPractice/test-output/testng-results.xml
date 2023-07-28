@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31" started-at="2023-07-27T18:16:57Z" finished-at="2023-07-27T18:16:57Z">
+  <suite name="Default suite" duration-ms="34" started-at="2023-07-28T18:57:26Z" finished-at="2023-07-28T18:57:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31" started-at="2023-07-27T18:16:57Z" finished-at="2023-07-27T18:16:57Z">
-      <class name="ForPractice_Array._Second_Practice_Array_Program.MultiDimensionalArray">
-        <test-method status="PASS" signature="multipicationInArray()[pri:0, instance:ForPractice_Array._Second_Practice_Array_Program.MultiDimensionalArray@6a4f787b]" name="multipicationInArray" duration-ms="16" started-at="2023-07-27T23:46:57Z" finished-at="2023-07-27T23:46:57Z">
+    <test name="Default test" duration-ms="34" started-at="2023-07-28T18:57:26Z" finished-at="2023-07-28T18:57:26Z">
+      <class name="ForPractice_Pattern.Second_Patern_Program.Pattern8">
+        <test-method status="PASS" signature="pattern8()[pri:0, instance:ForPractice_Pattern.Second_Patern_Program.Pattern8@6a4f787b]" name="pattern8" duration-ms="15" started-at="2023-07-29T00:27:26Z" finished-at="2023-07-29T00:27:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- multipicationInArray -->
-      </class> <!-- ForPractice_Array._Second_Practice_Array_Program.MultiDimensionalArray -->
+        </test-method> <!-- pattern8 -->
+      </class> <!-- ForPractice_Pattern.Second_Patern_Program.Pattern8 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
