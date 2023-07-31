@@ -24,6 +24,8 @@ public class ArrayList {
      Set<String> s= new HashSet<String>(al);
      
      System.out.println(s);
+     
+     
 	}
 
 }
