@@ -1,5 +1,6 @@
 package ForPractice_Collection_Program.First_Collection_Program;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -21,6 +22,7 @@ public class ArrayList {
     	 System.out.println(s);
      }
      
+     Collections.sort(al);
      Set<String> s= new HashSet<String>(al);
      
      System.out.println(s);

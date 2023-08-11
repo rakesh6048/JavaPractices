@@ -4,8 +4,8 @@ public class CommonElementInArray {
 	
 	public static void main(String []args) {
 		
-		int arr1[] = {10,23,45,80,76,30,60};
-		int arr2[] = {56,89,10,87,60,23};
+		int arr1[] = {10,23,10,80,76,30,60};
+		int arr2[] = {56,89,10,60,60,23};
 		int arr3[] = {60,89,10,35,900,23};
 		
 		
@@ -13,12 +13,15 @@ public class CommonElementInArray {
 			int j1 = 0, k1=0;
 			for(int j=0;j<arr2.length;j++) {
 				if(arr1[i] ==arr2[j]) {
+					arr2[j]=0;
 					 j1 =arr1[i];
 				   
 				}
 			}
+			
 			for(int k=0;k<arr3.length;k++) {
 				if(arr1[i] ==arr3[k]) {
+					 arr3[k] =0;
 				     k1 = arr1[i];
 				
 			}

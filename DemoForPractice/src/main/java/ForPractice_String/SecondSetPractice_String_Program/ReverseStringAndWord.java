@@ -11,16 +11,16 @@ public class ReverseStringAndWord {
 		String s1="RakeshSingh";
 		String rev="";
 		
-		System.out.println("Print a sample String");
+		System.out.println("Print the sample String");
 		for(int i=0;i<s1.length();i++) {
 			System.out.print(s1.charAt(i));
 		}
-		System.out.println("Print String After Reverse");
-	    for(int i=s1.length()-1;i>=0;i--) {
-	    	rev=rev+s1.charAt(i);
-	    }
-	    System.out.println(rev);
-	    System.out.println();
+		System.out.println("\n"+"Print the reverse string");
+		for(int i=s1.length()-1;i>=0;i--) {
+			rev=rev+s1.charAt(i);
+		}
+		System.out.println(rev);
+		  
 	}
 	
 	@Test(enabled=false)
@@ -48,26 +48,26 @@ public class ReverseStringAndWord {
 		String s2[]=s1.split(" ");
 		String rev="";
 		
-		System.out.println("Print Sample String of s2");
+		System.out.println("Print the sample String");
 		for(int i=0;i<s2.length;i++) {
 			System.out.print(s2[i]+" ");
 		}
-		System.out.println("\n"+"Print String s2 after reverse");
+		System.out.println("\n"+"Print the reverse String");
 		for(int i=s2.length-1;i>=0;i--) {
 			rev=rev+s2[i]+" ";
 		}
 		System.out.println(rev);
-		System.out.println("\n"+"Print Word Reverse of String s2");
+		System.out.println("Reverse the word of String");
 		for(int i=0;i<s2.length;i++) {
 			String revWord="";
-			String s3=s2[i];
+			String s3 = s2[i];
 			for(int j=s3.length()-1;j>=0;j--) {
 				revWord = revWord+s3.charAt(j);
 			}
+			
 			System.out.print(revWord+" ");
 		}
-		System.out.println();
+		
 		
 	}
-
 }

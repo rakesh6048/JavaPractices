@@ -23,10 +23,10 @@ public class findVowelsConsonentCountInString {
 			if(ch[i]=='a' || ch[i]=='e' || ch[i]=='i' || ch[i]=='o' || ch[i]=='u') {
 				vowels++;
 				totalVowels=totalVowels+String.valueOf(ch[i]);
-			}else if(ch[i]>'a' && ch[i]<'z') {
+			}else if(ch[i]>='a' && ch[i]<='z') {
 				consonent++;
 				totalConsonent = totalConsonent+String.valueOf(ch[i]);
-			}else if(ch[i]>'0' && ch[i]<='9') {
+			}else if(ch[i]>='0' && ch[i]<='9') {
 				number++;
 				totalNumber=totalNumber+String.valueOf(ch[i]);
 			}else if(ch[i]==' ') {
