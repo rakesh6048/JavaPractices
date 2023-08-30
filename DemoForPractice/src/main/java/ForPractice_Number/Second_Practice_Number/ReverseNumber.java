@@ -21,13 +21,13 @@ public class ReverseNumber {
 			System.out.print(r);
 		}
 		System.out.println();
-		while(n1>0) {
+		/*while(n1>0) {
 			r=n1%10;
 			rev=(rev*10)+r;
 			n1=n1/10;
 		}
 		System.out.println("Reverse the Number in other way");
-		System.out.println("\n"+rev);
+		System.out.println("\n"+rev);*/
 	}
 
 }

@@ -26,7 +26,9 @@ public class PrimeNumber {
 		  }
 		}
 		
-		System.out.println("Print the prime number from 1 To "+n+" : "+primeNumber);
+		System.out.println();
+		
+		System.out.println("Print the prime number from 1 To "+n+" : "+Integer.valueOf(primeNumber));
 		
 	}
 

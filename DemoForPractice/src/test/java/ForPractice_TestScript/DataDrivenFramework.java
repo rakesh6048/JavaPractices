@@ -11,8 +11,7 @@ public class DataDrivenFramework {
 	public void  verifyLoginDetails(String login, String passwd) {
 		
 		System.out.println("User has login using username : "+login);
-		System.out.println("User has password using password : "+passwd);
-		
+		System.out.println("User has password using password : "+passwd);	
 	}
 	@DataProvider(name="DSM")
 	public Object[][] dataSuplier(){

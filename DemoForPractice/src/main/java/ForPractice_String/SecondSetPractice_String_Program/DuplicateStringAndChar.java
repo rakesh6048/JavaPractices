@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 @Listeners(ListnerDemo.class)
 public class DuplicateStringAndChar {
 	
-	@Test(priority =1, enabled = true)
+	@Test(priority =1, enabled = false)
 	public void verifyDuplicateString() {
 		
 		String s1="My name is rakesh Kumar Sngh My name is rakesh Kumar Sngh My name is rakesh Kumar Sngh My name is rakesh Kumar Sngh welcome to java";

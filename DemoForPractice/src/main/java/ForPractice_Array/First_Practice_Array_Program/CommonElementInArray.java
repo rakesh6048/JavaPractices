@@ -27,10 +27,8 @@ public class CommonElementInArray {
 			}
 			}
 			
-			if(j1==k1 ) {
-				if(j1==0 && k1==0) {
-					continue;
-				}
+			if(j1!=0 && k1!=0 ) {
+				
 				System.out.print(arr1[i]+" ");
 			}
 			
