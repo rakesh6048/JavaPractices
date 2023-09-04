@@ -5,7 +5,7 @@ public class CommonElementInArray {
 	public static void main(String []args) {
 		
 		int arr1[] = {10,23,10,80,76,30,60};
-		int arr2[] = {56,89,10,60,60,23};
+		int arr2[] = {56,89,10,60,60,23,23};
 		int arr3[] = {60,89,10,35,900,23};
 		
 		
