@@ -8,7 +8,8 @@ public class TestingTestNG {
 	@Test(enabled = true)
 	public void test1() {
 		System.out.println("Executed Test1");
-		int i=9/0;
+		int i=1/0;
+		System.out.println(i);
 	}
 	
 	@Test(enabled=true, alwaysRun=true, dependsOnMethods= {"test1"})
