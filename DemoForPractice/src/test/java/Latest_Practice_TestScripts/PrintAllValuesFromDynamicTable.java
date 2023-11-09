@@ -29,6 +29,8 @@ public class PrintAllValuesFromDynamicTable {
 		String col ="//*[@id='leftcontainer']/table/tbody/tr[1]/td";
 		int totalNumberOfColumn = driver.findElements(By.xpath(col)).size();
 		
+		//"//*[@id='leftcontainer']/table/tbody/tr[0]/td[1]"
+		
 		String firstPatht ="//*[@id='leftcontainer']/table/tbody/tr[";
 		String secondPath ="]/td[";
 		String thirdPath ="]";

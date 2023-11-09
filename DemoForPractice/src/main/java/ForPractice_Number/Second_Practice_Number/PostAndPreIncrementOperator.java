@@ -4,8 +4,7 @@ import org.testng.annotations.Test;
 
 public class PostAndPreIncrementOperator {
 	
-	@Test
-	public void postIncrement() {
+	public static void main(String args[])  {
 		
 		int a=10, b;
 		int a1=20,b1;

@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class StringSorting {
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void stringSortingUsingChar() {
 		
 		String s1 ="xusfckmqnaybl";
@@ -62,7 +62,7 @@ public class StringSorting {
 	}
 	
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void stringSortingUsingChar1() {
 		
 		//String s1 ="xusfckmqnaybl";

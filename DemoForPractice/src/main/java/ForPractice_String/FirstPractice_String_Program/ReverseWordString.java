@@ -1,10 +1,16 @@
 package ForPractice_String.FirstPractice_String_Program;
 
+import java.util.Scanner;
+
 public class ReverseWordString {
 
 	public static void main(String[] args) {
 		
-		String s1 ="API Automation Testing using RestAssured";
+		//String s1 ="API Automation Testing using RestAssured";
+		Scanner sc = new Scanner(System.in);
+		String s1=sc.nextLine();
+		System.out.println(s1);
+		
 		String s2[]=s1.split(" ");
 		System.out.println(s2.length);
 		String RevString = "";

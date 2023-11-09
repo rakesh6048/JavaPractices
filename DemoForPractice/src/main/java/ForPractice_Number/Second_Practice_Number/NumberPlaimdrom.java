@@ -6,9 +6,7 @@ import org.testng.annotations.Test;
 
 public class NumberPlaimdrom {
 	
-	@Test
-	public void validatePlaimdromNumber() {
-		
+	public static void main(String args[]) {
 		System.out.println("Please enter the number");
 		Scanner sc = new Scanner(System.in);
 		int n=sc.nextInt();

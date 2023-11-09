@@ -12,23 +12,22 @@ public class PrimeNumber {
 		System.out.println("Please enter the number");
 		Scanner sc = new Scanner(System.in);
 		int n=sc.nextInt();
-		String primeNumber="";
+		String primeNumber ="";
 		
 		for(int i=1;i<=n;i++) {
-			int count =0;
-		  for(int j=i;j>=1;j--) {
-			  if(i%j == 0) {
-				  count=count+1;
+			int count=0;
+		  for(int j=i;j>0;j--) {
+			  
+			  if(i%j==0) {
+				  count = count+1;
 			  }
 		  }
 		  if(count==2) {
-			  primeNumber =primeNumber+i+" "; 
+			  primeNumber=primeNumber+i+" ";
 		  }
 		}
-		
-		System.out.println();
-		
-		System.out.println("Print the prime number from 1 To "+n+" : "+Integer.valueOf(primeNumber));
+		System.out.println(primeNumber);
+		//System.out.println("Print the prime number from 1 To "+n+" : "+Integer.valueOf(primeNumber));
 		
 	}
 

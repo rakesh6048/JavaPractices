@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 public class GenerateRandomNumber {
 	
 	
-	@Test
-	public void generateRandomNuber() {
+	
+	public static void main(String args[]) {
 		
 	Random random = new Random();
 	
@@ -18,7 +18,7 @@ public class GenerateRandomNumber {
 	int n=sc.nextInt();
 	
 	for(int i=0;i<n;i++) {
-		int num = random.nextInt(10);
+		int num = random.nextInt(100);
 		System.out.print(num+" ");
 	}
 	

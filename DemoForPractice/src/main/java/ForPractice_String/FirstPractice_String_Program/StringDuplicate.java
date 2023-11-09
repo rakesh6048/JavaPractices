@@ -20,28 +20,26 @@ public class StringDuplicate {
 		   if(s2[i]!="0") {
 			   System.out.println(s2[i]+ "=" +countNum);
 		   }
-		   
 		}
 		
-		String s3="asdfasdfgag11hdjbfm5590@#@";
+		//String s3="asdfasdfgag11hdjbfm5590@#@";
+		
+		String s3="My name is rakesh Kumar Sngh My name is rakesh Kumar Sngh My name is rakesh Kumar Sngh My name is rakesh Kumar Sngh welcome to java";
 		
 		char ch[]=s3.toCharArray();
 		
 		for(int i=0;i<ch.length;i++) {
+			
 			int charCountNum = 1;
-		   for(int j=i+1;j<ch.length;j++) {
-			   
+		   for(int j=i+1;j<ch.length;j++) {			   
 			  if(ch[i]==ch[j]) {
 				  ch[j]='0';
 				  charCountNum++;
-			  }
+			  }  
 		   }
 		   if(ch[i] != '0') {
-			   System.out.println(ch[i] + "=" +charCountNum);
+			   System.out.print(ch[i] + "=" +charCountNum+" ");
 		   }
-		   
 		}	
-
 	}
-
 }

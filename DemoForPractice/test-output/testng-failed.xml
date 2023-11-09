@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ForPractice_Number.Second_Practice_Number.PrimeNumber">
+      <class name="ForPractice_String.SecondSetPractice_String_Program.TestListnerDemo">
         <methods>
-          <include name="primeNumber"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- ForPractice_Number.Second_Practice_Number.PrimeNumber -->
+      </class> <!-- ForPractice_String.SecondSetPractice_String_Program.TestListnerDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

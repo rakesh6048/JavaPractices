@@ -6,8 +6,7 @@ import org.testng.annotations.Test;
 
 public class NumberArmStrong {
 	
-	@Test
-	public void armastrongNumber() {
+	public static void main(String args[]) {
 		
 		System.out.println("Please enter the number");
 		Scanner sc = new Scanner(System.in);
@@ -23,9 +22,9 @@ public class NumberArmStrong {
 		}
 		
 		if(sum == check) {
-			System.out.println(sum +"Number is armstrong");
+			System.out.println(sum +" is armstrong");
 		} else {
-			System.out.println(sum +"Number is not armstrong");
+			System.out.println(sum +" is not armstrong");
 		}
 	}
 

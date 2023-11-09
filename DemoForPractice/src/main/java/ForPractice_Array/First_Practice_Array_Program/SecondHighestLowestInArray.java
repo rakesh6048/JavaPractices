@@ -18,7 +18,7 @@ public class SecondHighestLowestInArray {
 		  }
 		}
 		System.out.println("Largest Nmuber : "+arr[0]);
-		System.out.println("Second Largest : "+arr[1]);
+		System.err.println("Second largest Number : "+arr[1]);
 		System.out.println("Lowest Number : "+arr[(arr.length)-1]);
 		System.out.println("Second Lowest Number : "+arr[(arr.length)-2]);
 

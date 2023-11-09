@@ -6,8 +6,7 @@ import org.testng.annotations.Test;
 
 public class PerfectNumber {
 	
-	@Test
-	public void perfectNumber() {
+	public static void main(String args[]) {
 		
 		System.out.println("Please enter the number");
 		Scanner sc = new Scanner(System.in);

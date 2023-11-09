@@ -6,8 +6,7 @@ import org.testng.annotations.Test;
 
 public class ReverseNumber {
 	
-	@Test
-	public void reverseNumber() {
+	public static void main(String args[]) {
 		
 		int n, r, rev = 0, n1=155;
 		System.out.println("Please Enter the Number");
