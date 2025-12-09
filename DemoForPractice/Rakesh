@@ -13,7 +13,7 @@ driver.findElement(By.xpath("//input[@name='upfile']")).sendKeys("D:/Read&WriteE
 		
 		
 		
-		static String url ="Jdbc:mysql://localhost:3306/demo_sq_practice";
+	static String url ="Jdbc:mysql://localhost:3306/demo_sq_practice";
 	static String userName = "admin";
 	static String password = "admin";
 	
