@@ -17,8 +17,8 @@ public class Properties {
 		
 		empDetails.load(fis);
 		
-		//System.out.println("Name : "+empDetails.getProperty("name"));
-		//System.out.println("Address : "+empDetails.getProperty("address"));
+		System.out.println("Name : "+empDetails.getProperty("name"));
+		System.out.println("Address : "+empDetails.getProperty("address"));
 		
 	}catch(Exception e) {
 		System.out.println(e);

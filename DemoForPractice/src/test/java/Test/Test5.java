@@ -7,7 +7,7 @@ public class Test5 {
 		
 		
 		String one= "abcd abab cab";
-		String two = "ab";
+		String two = "abcd abcd";
 		
 		String s2[]=one.split(" ");
 		int count = 0;
@@ -31,9 +31,6 @@ public class Test5 {
 			}
 		}
 		System.out.println(two+"="+count);
-		
-		
-
 	}
 
 }

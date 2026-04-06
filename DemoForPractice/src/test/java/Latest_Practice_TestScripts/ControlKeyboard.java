@@ -75,5 +75,4 @@ public class ControlKeyboard {
 			System.out.println(e);
 		}
 	}
-
 }

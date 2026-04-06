@@ -28,7 +28,7 @@ public class SecondLargerAndSecondLowest {
 		System.out.println("\n"+"Largest Number in Array : "+arr[0]);
 		System.out.println("Second Largest Number in Array : "+arr[1]);
 		System.out.println("Lowest Number in Array : "+arr[(arr.length)-1]);
-		System.out.println("Second Largest Number in Array : "+arr[(arr.length)-2]);
+		System.out.println("Second Lowest Number in Array : "+arr[(arr.length)-2]);
 		
 	}
 

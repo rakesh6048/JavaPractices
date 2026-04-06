@@ -4,8 +4,6 @@ import org.testng.annotations.Test;
 
 public class CommonElement {
 	
-	
-	
 	@Test(enabled=true)
 	public void commonEelementInArrays() {
 		
@@ -31,42 +29,4 @@ public class CommonElement {
 		   }
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

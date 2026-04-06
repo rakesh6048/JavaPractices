@@ -19,5 +19,4 @@ public class DataDrivenToWorkOnDataProvider {
 		System.out.println("Passwd : "+passwd);
 		System.out.println();
 	}
-	
 }

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class ThreadPoolSize {
 	
 	public int count=0;
-	@Test(threadPoolSize =2, invocationCount=5)
+	@Test(threadPoolSize =8, invocationCount=5)
 	public void demoForThreadPoll() {
 		count++;
 		System.out.println("Rakesh : "+count);
